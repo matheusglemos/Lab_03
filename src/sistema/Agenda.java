@@ -94,7 +94,6 @@ public class Agenda {
 	/**
 	 * Metodo que verifica se o objeto em questao e o atual sao iguais.
 	 * 
-	 * @param o objeto a ser comparado.
 	 * @return true(iguais) ou false(diferentes).
 	 */
 	@Override
