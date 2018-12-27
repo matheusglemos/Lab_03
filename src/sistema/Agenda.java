@@ -14,14 +14,14 @@ public class Agenda {
 	/**
 	 * Array do tipo Contatos, para armazenar todos os objetos(contatos).
 	 */
-	private Contatos[] contatos;
+	private Contato[] contatos;
 
 	/**
 	 * Construtor sem parametros, responsavel pela criacao de uma agenda com 100
 	 * espacos.
 	 */
 	public Agenda() {
-		this.contatos = new Contatos[100];
+		this.contatos = new Contato[100];
 	}
 
 	/**
@@ -46,7 +46,7 @@ public class Agenda {
 		} else if (telefone.trim().equals("")) {
 			throw new NullPointerException("Telefone Inválido!");
 		} else {
-			Contatos contatos = new Contatos(nome, sobrenome, telefone);
+			Contato contatos = new Contato(nome, sobrenome, telefone);
 			this.contatos[posicao - 1] = contatos;
 			return true;
 		}
